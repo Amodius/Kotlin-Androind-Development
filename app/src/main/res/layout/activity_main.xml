@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculate Age"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:id="@+id/yearEditText"
+        android:layout_gravity="center"
+        android:hint="Enter year"
+        android:maxWidth="200dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mCalBtn"
+        android:layout_gravity="center"
+        android:minWidth="200dp"
+        android:text="Calculate"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageTextView"
+        android:text="Age"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:textSize="22sp"
+
+        />
+
+</LinearLayout>
